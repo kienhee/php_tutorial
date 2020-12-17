@@ -1,0 +1,31 @@
+#container{
+    background-color: #C28156;
+    height: 100%;
+}
+#nav{
+    background-color: cornsilk;
+    border: 3px dotted rgb(145, 133, 133);
+    height: 700px;
+    width:500px;
+    margin-left: 400px;
+
+   padding: 15px 15px 15px 15px;
+}
+h2{
+    background-color: blue;
+    color: cornsilk;
+    height: 40px;
+    width:100px;
+    border-radius: 6px;
+    text-align: center;
+    line-height: ;
+}
+#footer{
+    background-color:#0ff;
+    width:200px;
+    height: auto;
+    padding:15px;
+    border: 1px solid ;
+    border-radius: 15px;
+    margin-left: 5px;
+}
