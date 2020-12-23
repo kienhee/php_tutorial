@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ex_03</title>
+    <title>excercise3</title>
 </head>
 <body>
     <h1>Application for permission to dare my daughter</h1>
-    <p></p><b>Note: </b>Form is to be completed at least 21 days prior to date</p>
-    <form action="#" method="POST">
+    <p><b>Note:</b>Form is to be completed at least 21 days prior to date</p>
+    <form action="">
         <fieldset>
             <legend>Personal Details</legend>
-            <label>Name:</label>
+            <label>Name: </label>
             <input type="text" placeholder="Enter name here"><br>
-            <label>Address</label>
+            <label>Address: </label>
             <input type="text" placeholder="Enter address here"><br>
-            <label>Email:</label>
+            <label>Email: </label>
             <input type="email" placeholder="Enter email here"><br>
-            <label>IQ</label>
+            <label>IQ: </label>
             <input type="number" placeholder="Enter IQ here"><br>
-            <label>Gender</label><br>
+            <label>Gender </label><br>
             <input type="radio" name="gender" id="Male">
             <label for="Male">Male</label><br>
             <input type="radio" name="gender" id="Female">
@@ -44,31 +44,28 @@
         </fieldset>
         <fieldset>
             <label>Political Persuasion</label>
-            <input list="Pol">
-                <datalist id="Pol">
-                    <option value="Left Wing">
-                    <option value="Right Wing">
-                    <option value="Conservative">
-                    <option value="Nazi">
-                </datalist>
+            <select id="Persuasion">
+                <option value="Left Wing">Left Wing</option>
+                <option value="Right Wing">Right Wing</option>
+                <option value="Conservative">Conservative</option>
+                <option value="Nazi">Nazi</option>
+              </select>
             <label>Education Lever Completed</label>
-            <input list="Edu">
-            <datalist id="Edu">
-                    <option value="University">
-                    <option value="College">
-                    <option value="High School">
-                    <option value="None">
-                </datalist>
+            <select id="education">
+                <option value="University">University</option>
+                <option value="College">College</option>
+                <option value="High School">High School</option>
+                <option value="None">None</option>
+              </select>
         </fieldset>
         <fieldset>
             <legend>Essay Section</legend>
             <p>In 59 words or more explain why you want to date my daugter</p>
-            <input type="text" placeholder="Enter Text Here" minlength="50">
+            <textarea name="message" style="width:200px; height:100px;" placeholder="Enter Text Here"></textarea>
             <p>Please upload contact detail for 2 references</p>
-            <input type="text" placeholder="Enter Text Here">
+            <textarea name="message" style="width:200px; height:100px;" placeholder="Enter Text Here"></textarea>
             <br>
-            <p>Upload your Police Certificate, Bank Statement and Medical Certificate here:</p>
-            <input type="file">
+            <p>Upload your Police Certificate, Bank Statement and Medical Certificate here:<input type="file"></p>    
         </fieldset>
         <input type="submit" value="Send your application">
     </form>
