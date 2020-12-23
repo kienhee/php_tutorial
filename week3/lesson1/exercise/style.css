@@ -1,0 +1,94 @@
+/* header */
+.header{          
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0,0.3),rgba(0, 0, 0,0.3)), url("header.jpg");
+    height: 400px;
+    width: 100%;
+    margin: auto;
+    object-fit: cover;
+    background-position: center;
+    text-align: center;  
+    background-repeat: no-repeat;
+    background-size: cover; 
+    font-family: 'Lora',sans-serif;
+    }
+#nav{
+    position: relative; 
+    padding: 20px, 20px, 20px, 20px; 
+    width: 100%;
+    height: 50px;
+     text-align: center;
+    float: right;}  
+ li{            
+     list-style: none; 
+     text-align: center; 
+     display: inline;} 
+#cs{
+    text-align: center;
+    float: left;
+    color: white ;
+    font-size: 30px;}
+.menu{color: white;
+    float: right; 
+    font-size: 20px;}
+#take_actions:hover{       
+     height: 40px;
+    width: 150px;
+    color: white; 
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 100px;
+    transition: 0.3s;
+    padding: 2px; } 
+#header-main{
+    margin-top: 100px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 23px;
+    color: white;}
+#more-btn{
+    background: rgb(54, 179, 168);
+    height:30px;
+    width: 150px;
+    border-radius: 100px;
+    text-align: center;
+    padding: 13px, 13px, 13px, 13px;
+    color: white;}        
+    /* body */
+    body{font-family: 'ope';}
+    #text{
+        text-align: center;          
+    }
+    .main{
+        width: 80%;
+        height: 70%;
+        margin-left: 150px;
+    }
+    .img{
+        
+        height: 450px;
+        display: flex;
+    }
+    #imgr{
+        width: 50%;
+        margin-right: 50px; 
+        text-align: center;
+       
+    }
+    #imgl{ 
+        margin-left: 100px;
+        width: 50%;
+        text-align: center; 
+    }
+    /* footer */
+    .footer{
+        width: 100%;
+        height: 100px;
+        background: black;
+
+    }
+    #text-footer{
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+        line-height: 1px;
+    }
