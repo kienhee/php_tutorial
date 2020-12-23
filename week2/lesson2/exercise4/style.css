@@ -4,8 +4,8 @@
     width: 100%;
     text-align: center;
     padding: 10px;
-    
-    
+    border-bottom: 3px solid #CCCCCC;
+    font-size: 20px;  
 }
 h1{
     color: black;
