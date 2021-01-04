@@ -8,6 +8,7 @@
 		<div class="register-box">
 			<h3>Đăng ký thành viên</h3>
 			<p>Để đăng ký thành viên, bạn cần khai báo tất cả các ô trống dưới đây</p>
+			<form action="">
 			<input class="input" type="text" name="full_name" id="full_name" placeholder="Họ và tên đệm"><br>
 			<input class="input" type="text" name="last_name" id="last_name" placeholder="Tên"><br>
 			<input type="text" name="username" id="username" placeholder="Tên đăng nhập" required><br>
@@ -25,15 +26,16 @@
 			<input placeholder="Ngày tháng năm sinh" type="text" onfocus="(this.type='date')" onblur="(this.value='')" id="date"><br>
 			<textarea name="signature" rows="3" cols="50" placeholder="Chữ ký"></textarea><br>
 			<select name="security-question" id="security-question" required>
-				<option value="" disabled selected hidden>Câu hỏi bảo mật</option>
-				<option>Quê quán của bạn?</option>
-				<option>Ngày tháng năm sinh của bạn?</option>
-				<option>Bạn có anh/em trai không?</option>
+			<option value="" disabled selected hidden>Câu hỏi bảo mật</option>
+			<option>Quê quán của bạn?</option>
+			<option>Ngày tháng năm sinh của bạn?</option>
+			<option>Bạn có anh/em trai không?</option>
 			</select><br>
 			<input type="text" placeholder="Trả lời câu hỏi" required></input><br>
 			<input type="checkbox" required>Tôi đồng ý với <button>quy định đăng ký thành viên</button></input><br><br>
 			<input type="reset" name="reset" value="Thiết lập lại"></input>
 			<input type="submit" name="sbmit" value="Đăng ký thành viên"></input>
+			</form>		
 		</div>
 	</div>	   
 </body>
