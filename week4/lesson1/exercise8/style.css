@@ -1,0 +1,31 @@
+.container{
+    width: 80%;
+    height: 1900px;
+    border: 1px solid white;
+    margin-left: 130px;
+    background-image: url('img/background.jpg');
+background-size: cover; 
+}
+.img_food{
+    width: 35%;
+    height: 300px;
+    border: 1px solid wheat;
+    margin-left: 50px;
+    margin-top: 30px;   
+}
+#avatar_food{ 
+    width: 100%;
+    height: 300px;}
+.content h1,h3, ol{
+    margin-left: 70px;
+    font-size: 20px;
+}
+p{  font-size: 20px;}
+#name_food{
+    float: right;   display: inline;
+   margin-top: 100px;
+   margin-right: 60px;
+   font-family: "Brush Script MT", cursive;
+   font-size: 70px;
+}
+.video_youtube{margin-left: 230px;}
