@@ -4,100 +4,96 @@
 	margin: 0;
 	padding: 0;
 }
-body {
-	background-image: url('img/pelayo-arbues-mmPwN3BiHGE-unsplash.jpg');
-}
 .container {
 	position: absolute;
 	left: 39%;
 	top: 15%;
-	border: 1px solid white;
 	background-color: white;
 	background-repeat: repeat-x;
-}
-.login-box {
+	border: 15px solid rgb(44,67,150);}
+.form_login {
 	padding: 20px 20px 40px 20px;
-	width: 274px;
-}
-.text-style {
-	color: gray;
-	margin-bottom: 10px;
-	text-align: center;
-}
-.navlogin-bar ul li {
-	display: inline-table;
-	margin: 10px 0 15px 0;
-}
+	width: 280px;}
+.nav_login{
+	height: 50px;}
+.nav_login ul{
+	margin-top: 30px;
+	margin-left: 8px;}
+.nav_login li{
+	display: inline;}
 .fb-btn {
 	border: 1px solid rgb(0, 98, 255);
 	background-color: rgb(0, 98, 255);
 	color: white;
+	text-align: center;
 	padding: 8px 8px 8px 8px;
-}
+	margin-left: 3px;}
 .fb-btn a {
 	text-decoration: none;
 	font-size: 13px;
-	color: white;
-}
+	color: white;}
 .google-btn {
 	border: 1px solid rgb(255, 0, 39);
 	background-color: rgb(255, 0, 39);
 	color: white;
-	padding: 8px 15px 8px 15px;
+	padding: 10px 8px 8px 8px;
 	text-align: center;
 	font-size: 13px;
-}
+	margin-left: 5px;}
 .google-btn a {
 	text-decoration: none;
 	font-size: 13px;
-	color: white;
-}
+	color: white;}
 .phone-btn {
 	border: 1px solid rgb(81, 230, 23);
 	background-color: rgb(81, 230, 23);
-	color: white;
-	padding: 8px 15px 8px 15px;
-	float: right;
+	color: white;	
+	padding: 10px 8px 8px 8px;
 	font-size: 13px;
-}
+	text-align: center;
+	margin-left: 5px;}
 .phone-btn a {
 	text-decoration: none;
 	font-size: 13px;
-	color: white;
-}
-.login-box input[type="email"], input[type="password"] {
-	width: 100%;
+	color: white;}
+/* aaaaaaaaaaaaaaa */
+.text_style {
+	text-align: center;
+    border-bottom: 1px solid #c7adad;
+    line-height: 0.1em;
+    margin: 11px 0 11px;
+    color: #b9a9a9;}
+.text_style span{
+    background:#fff;
+    padding: 2px 10px;}
+.label {
+	color: #002db3;}
+.label:after {
+	content: "*";
+	color: #cc0000;}
+.form_login input[type="email"], input[type="password"] {
+	width: 90%;
 	height: 35px;
 	padding: 10px;
-	margin-bottom: 20px;
-}
-.forgot-psw {
+	margin-bottom: 20px;}
+.row {
+	margin-bottom: 20px;}
+.row a {
 	float: right;
-}
-.autolog-forgotpass ul li {
-	display: inline-table;
-	margin-bottom: 20px;
-}
-.login-btn {
+	text-decoration: none;
+	color: #002db3;}
+.login_btn button {
 	text-align: center;
-	width: 95%;
+	width: 100%;
 	border: 1px solid rgb(0, 167, 255);
 	background-color: rgb(0, 167, 255);
 	padding: 10px;
 	margin-bottom: 20px;
-}
-.login-btn a {
-	text-decoration: none;
-	color: white;
+	color: white;}
+.sign_up_btn button {
 	text-align: center;
-}
-.register-btn {
-	text-align: center;
-	width: 95%;
+	width: 100%;
 	border: 1px solid gray;
 	background-color: white;
 	padding: 10px;
-}
-.register-btn a {
-	text-decoration: none;
-}
+	margin-top: 15px;}

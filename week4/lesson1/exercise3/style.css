@@ -1,0 +1,55 @@
+
+#fullemail{
+	height:30px;
+	width: 60%;
+	display: inline;
+	position: relative;
+	top: 16px;}
+button{
+	position: relative;
+	top: 10px;}
+.Button_icon img{
+    width: 19px;
+    height: 19px;}
+body table{
+	background-color: black;
+	color: #9b9b9b;
+	margin: auto;
+	padding: 30px;}
+body table tr td{
+	padding-left: 80px;}
+.col-left{
+	position: relative;
+	bottom: 28px;
+	padding-right: 200px;}
+.col-right{
+	position: relative;
+	bottom: 19px;}
+button{
+	background-color: #00bcd4;
+	width: 50px;
+	height: 35px;
+	font-size: 15px;
+	position: relative;
+    top: 18px;
+    border: none;
+    text-align: center;}
+.square{
+	width: 13%;
+	background-color: #7986CB;
+	text-align: center;
+	font-size: 25px;
+	padding: 5px;
+    color: white;
+    margin-left: 115px;}
+.color_footer{
+    width: 1164px;
+    height: 100px;  
+    margin-left: 93px;
+  padding-top: 1px;
+  background-color: rgb(21, 21,21);}
+#Text_Copyright{
+    float: right;
+    margin-right: 60px;
+    margin-top: -50px;
+    color: #9b9b9b;}

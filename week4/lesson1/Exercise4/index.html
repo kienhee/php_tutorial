@@ -1,13 +1,13 @@
 <html>
 	<head>
-		<title>Register Form</title>
+		<title>excecise4</title>
 		<link rel="stylesheet" href="style.css">
 	</head>
 <body>
 	<div class="container">
-		<div class="register-box">
-			<h3>Đăng ký thành viên</h3>
-			<p>Để đăng ký thành viên, bạn cần khai báo tất cả các ô trống dưới đây</p>
+		<div class="register">
+			<h3 class="Color_text">Đăng ký thành viên</h3>
+			<p class="Color_text">Để đăng ký thành viên, bạn cần khai báo tất cả các ô trống dưới đây</p>
 			<form action="">
 			<input class="input" type="text" name="full_name" id="full_name" placeholder="Họ và tên đệm"><br>
 			<input class="input" type="text" name="last_name" id="last_name" placeholder="Tên"><br>
@@ -16,15 +16,16 @@
 			<input type="password" name="password" id="password" placeholder="Mật khẩu" required><br>
 			<input type="password" name="repeat-password" placeholder="Nhập lại mật khẩu" required><br>
 			<!-- giới tính -->
-			<label for="gender" id="gender">Giới tính</label>
+			<label for="gender" class="Color_text" id="gender">Giới tính</label>
 			<input type="radio" id="other" name="gender" value="other">
-			<label for="other">N/A</label>
+			<label for="other" class="Color_text">N/A</label>
 			<input type="radio" id="male" name="gender" value="male">
-			<label for="male">Nam</label>
+			<label for="male" class="Color_text">Nam</label>
 			<input type="radio" id="female" name="gender" value="female">
-			<label for="female">Nữ</label><br>
-			<input placeholder="Ngày tháng năm sinh" type="text" onfocus="(this.type='date')" onblur="(this.value='')" id="date"><br>
+			<label for="female" class="Color_text">Nữ</label><br>
+			<input type="date" id="birthday" name="birthday"><br>
 			<textarea name="signature" rows="3" cols="50" placeholder="Chữ ký"></textarea><br>
+			<!-- câu hỏi -->
 			<select name="security-question" id="security-question" required>
 			<option value="" disabled selected hidden>Câu hỏi bảo mật</option>
 			<option>Quê quán của bạn?</option>
@@ -32,9 +33,9 @@
 			<option>Bạn có anh/em trai không?</option>
 			</select><br>
 			<input type="text" placeholder="Trả lời câu hỏi" required></input><br>
-			<input type="checkbox" required>Tôi đồng ý với <button>quy định đăng ký thành viên</button></input><br><br>
+			<input type="checkbox" required>Tôi đồng ý với<button type="button" onclick="alert('phải thật đẹp trai')">Quy định đăng ký thành viên</button></input><br><br>
 			<input type="reset" name="reset" value="Thiết lập lại"></input>
-			<input type="submit" name="sbmit" value="Đăng ký thành viên"></input>
+			<input type="submit" name="submit" value="Đăng ký thành viên"></input>
 			</form>		
 		</div>
 	</div>	   
