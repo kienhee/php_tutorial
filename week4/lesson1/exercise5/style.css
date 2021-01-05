@@ -1,0 +1,57 @@
+#sign_up{
+	width: 75%;
+	margin: 0 auto;
+	border: 8px solid rgb(1, 74, 123);
+	min-height: 400px;
+	padding: 26px;
+	font-family: sans-serif;
+}
+.banner{
+	background-image: url('img/ana-paula-grimaldi-mL9cw7QvhwI-unsplash.jpg');
+	background-size: cover;
+	height: 400px;
+}
+.banner_small{
+	width: 45%;
+	color: black;
+	min-height: 120px;
+	border: 1px solid gray;
+	position: relative;
+	top: 50%;
+	left: 5%;
+	background-color: rgba(255, 245, 238, 0.788);
+	padding: 10px;
+}
+.distance{
+	padding-left: 15px;
+}
+
+.text_bold, .submit{
+    color: #1E90FF;
+	font-weight: 700;
+}
+.star_red{
+	color: red;
+}
+.Enter, .submit{
+	width: 97%;
+	padding: 5px;
+}
+.submit{
+	background-color: rgb(139, 194, 74);
+	color: rgb(255, 255, 255);
+	border: none;
+}
+.question_accout{
+    text-align: center;
+    color: rgb(163, 161, 158);
+}
+.capcha{
+    width: 100px;
+    height: 30px;
+}
+#signIn{background-color: rgb(252, 252, 252);
+	color: rgb(36, 41, 46);
+    border: 1px solid  black ;
+    width: 97%;
+	padding: 5px;}
