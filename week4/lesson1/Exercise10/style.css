@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+.Form {
+	background-color: white;
+	margin: 5% 22% 5% 22%;
+	padding: 3%;
+	line-height: 1.5;
+}
+.Form h2 {
+	text-align: center;
+} 
+.Address {
+	text-align: center;
+}
+.Tite {
+	border-bottom: 1px solid black;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.year {
+	float: right;
+}
+.under_line {
+	border-bottom: 1px solid hsl(2, 0%, 78%);
+}
+.List {
+	margin-left: 30px;
+}
