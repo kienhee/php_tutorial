@@ -1,0 +1,21 @@
+.box-maths{
+    border: solid blue;
+    width:600px;
+    height: 300px;
+}
+.box-title{
+    border-bottom: solid blue;
+    background:#FEFFED;
+}
+p{
+    color: blue;
+}
+.box-maths{
+    margin:auto;
+}
+.box-maths > form{
+    margin-left: 30px;
+}
+.color-button{
+    background-color: #28A745;
+}
