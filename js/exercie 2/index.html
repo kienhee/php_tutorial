@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 2</title>
+    <style>
+        form{
+            margin: 0 auto;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            
+        }
+        h4{
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+         label, input,span, p{
+            
+            margin-left: 20%;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" >
+        <h4>Giải phương trình bậc nhất <br>
+        ax + b = 0</h4>
+        <label for="#">Nhập hệ số a:</label><br>
+        <input type="text" name="" id="a"><br>
+        <span id="error"></span><br>
+        <label for="#">Nhập hệ số b:</label><br>
+        <input type="text" name="" id="b">
+        <span id="error"></span>
+        <p>phương trình có dạng </p>
+        <span id="phuongtrinh"></span><br>
+        <input type="submit" onclick="math()" value="Tìm x" style="background-color: blue;"><br>
+        <span id="result"></span>
+    </form>
+    <script>
+        function math() {
+            var a = document.getElementById('a').value;
+            var b = document.getElementById('b').value;
+            var c = ((-b) / a);
+           document.getElementById('phuongtrinh').innerHTML= a + 'x +' + b + '= 0';
+            document.getElementById('result').innerHTML= 'x =' + c;
+            
+        }
+    </script>
+</body>
+</html>
