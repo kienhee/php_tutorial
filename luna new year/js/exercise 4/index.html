@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm giai thừa</title>
+    <style>
+        form{
+            margin: 0 auto;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+        }
+        h3{
+            text-align: center;
+            margin: auto;
+            border-bottom: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="#" method="POST">
+        <h3>Tìm giai thừa </h3>
+        <label for="">Nhập vào hệ số giai thừa: </label><br>
+        <input type="number" name="" id="input"><br>
+        <span id="error">a</span><br>
+        <input type="submit"onclick="factorial(this.form)" value="Tính gia thừa" style="background-color: blue;"><br>
+        <span id="result">a</span>
+    </form>
+    <script>
+        var factored = 1;
+
+function factorial(form) {
+	
+	var number = form.factor.value;
+	var n = number;
+	
+	
+	for (i = n; i>0 ; i--){
+		if (n>170)	{
+			form.result.value="Hey! that is too big for my pea brain";
+			}
+		else	{
+			if (i==n)	{
+				factored= i;
+				}
+			else	{
+				factored = factored*(i);
+				}
+				form.result.value=factored;
+			}
+			
+		}
+	
+	return factored;
+	} 
+	
+
+    </script>
+</body>
+</html>

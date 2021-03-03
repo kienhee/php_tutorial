@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <h3>Máy tính</h3>
+        <label for="">Số thứ nhất: </label>
+        <input type="text"  id="numberOne"><br>
+        <label for="">Số thứ hai: </label>
+        <input type="text" id="numberTwo"><br>
+        <label for="">Kết quả: </label>
+        <span  id="result"></span><br>
+       
+        <input type="button"  onclick= "cong()" value="cong">
+        <input type="submit" value="tru" onclick="tru()">
+        <input type="submit"  value="nhan" onclick="nhan()">
+        <input type="submit"  value="chia" onclick="chia()">
+
+    </form>
+    <script>
+        function cong() {    
+         var a = document.getElementById('numberOne').value;
+         var b = document.getElementById('numberTwo').value;
+         var result = parseInt(a)+parseInt(b);
+         document.getElementById('result').innerHTML =result;
+        }
+        function tru() {    
+         var a = document.getElementById('numberOne').value;
+         var b = document.getElementById('numberTwo').value;
+         var result = parseInt(a) - parseInt(b);
+         document.getElementById('result').innerHTML =result;
+        }
+        function nhan() {    
+         var a = document.getElementById('numberOne').value;
+         var b = document.getElementById('numberTwo').value;
+         var result = parseInt(a) * parseInt(b);
+         document.getElementById('result').innerHTML =result;
+        }
+        function chia() {    
+         var a = document.getElementById('numberOne').value;
+         var b = document.getElementById('numberTwo').value;
+         var result = parseInt(a) / parseInt(b);
+         document.getElementById('result').innerHTML =result;
+        }
+        
+    </script>
+</body>
+</html>

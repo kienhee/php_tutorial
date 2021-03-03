@@ -19,3 +19,7 @@ p{
 .color-button{
     background-color: #28A745;
 }
+label.error {
+    display: inline-block;
+    color:red;
+    width: 200px;}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>kiem tra so a</title>
     <style>
         form{
             margin: auto;
@@ -15,22 +15,37 @@
         input,label,p{
             margin-left: 12px;
         }
+        #error{
+            margin-left: 10px;
+            color: red;
+        }
     </style>
 </head>
 <body>
     <form action="#">
         <label >Nhập vào số a: </label><br>
-        <input type="number" id="number" required ><br><br>
+        <input type="text" id="number"  ><br>
+        <span id="error"></span><br>
         <input type="submit" onclick="test()" value="Kiểm tra" style="background-color: blue ;">
         <p><span id="result"></span>nằm trong khoảng 1 - 10</p>
     </form>
     <script>
         function test() {
             var a = document.getElementById('number').value;
-            if(number < 1 || number >10 ){
-                document.getElementById('result').innerHTML= a  + " " +  "không"  ;
-            }else{
+            if(a == ''){
+                document.getElementById('error').innerHTML= 'vui lòng kiểm tra lại';
+            }
+            else if(isNaN(a)){
+                document.getElementById('error').innerHTML= ' bạn nhập không phải số ạ';
+            }
+            else if(a < 1 || a >10 ){
+                document.getElementById('result').innerHTML=  a + " " + 'không '  ;
+            }
+            else if ( a >= 1 || a <= 10){
                 document.getElementById('result').innerHTML= a + " ";
+            }
+            else {
+                document.getElementById('error').innerHTML= " ";
             }
             
         }

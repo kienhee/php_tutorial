@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 5</title>
+    <style>
+        form{
+            margin: 0 auto;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="#">
+        <label for="">Name: </label>
+        <input type="text" id="name" name="name">
+        <span id="errorName"></span><br><br>
+        <label for="">Email: </label>
+        <input type="text" id='email'>
+        <span id="errorEmail"></span><br><br>
+        <label for="Country">Country: </label>
+        <select  id="country">
+            <option value="#">text Select-Country</option>
+            <option value="saab"> text Viet Nam </option>
+            <option value="fiat">text Japan</option>
+            <option value="audi"> text USA</option>
+          </select>
+        <span id="errorCountry"></span><br><br>
+        <input type="submit" onclick="check()" value="Send info " >
+    </form>
+    <script>
+        function check() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var country = document.getElementById('country').value;
+                //check name
+            if(name == ''){
+                document.getElementById('errorName').innerHTML= 'vui lòng kiểm tra lại';
+            }
+            
+            else{
+                document.getElementById('errorName').innerHTML=" ";
+            }
+            //check email
+            var mailformat = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            if(!mailformat.test(email)){
+                document.getElementById('errorEmail').innerHTML='vui lòng nhập lại trường này'
+            }
+            else{
+                document.getElementById('errorEmail').innerHTML=" ";
+            }
+            //check country
+     
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>max min</title>
+    <style>
+        form{
+            width: 300px;
+            height: 350px;
+            border: 1px solid black;
+            margin: auto;
+        }
+        h3{
+            border-bottom: 1px solid black;
+            text-align: center;
+        }
+        label, input, h4{
+            margin-left: 20%;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <h3>Tìm max -min</h3>
+        <label for="">Nhập số thứ nhất: </label><br>
+        <input type="text" name="" id="numberone"><br>
+        <label for="">Nhập số thứ hai: </label><br>
+        <input type="text" name="" id="numbertwo"><br>
+        <label for="">Nhập số thứ ba: </label><br>
+        <input type="text" name="" id="numberthree"><br><br>
+        <input type="submit" value="Hiển thị max - min" style="background-color: blue;" onclick="maxmin()">
+        <h4>Số lớn nhất: <span id="max"></span></h4>
+        <h4>Số nhỏ nhất: <span id="min"></span></h4>
+    </form>
+    <script>
+        
+        function maxmin() {
+            var a = document.getElementById('numberone').value;
+            var b = document.getElementById('numbertwo').value;
+            var c = document.getElementById('numberthree').value;
+       a, b , c.sort(function(a, b){return a - b});
+        }
+    </script>
+</body>
+</html>

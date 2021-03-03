@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chu vi và diện tích hình chữ nhật</title>
+    <link rel="stylesheet" href="stye.css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box-maths">
+            <div class="box-title">
+            <h1>Chu vi và diện tích hình chữ nhật</h1>
+            </div>
+            <form action="#" id="formDemo">
+            <label for="">Nhập chiều dài: (met)</label><br>
+            <input type="number" id="chieudai" name="chieudai" required><br><br>
+            <label for="">Nhập chiều rộng: (met)</label><br>
+            <input type="number" id="chieurong" name="chieurong " required><br><br>
+            <button class="color-button"  >tính chu vi và diện tich</button><br>
+            <i >chu vi =<p id="chuvi"></p></i>
+            <i>dientich =<p id="dientich"></p> </i>
+            </form>
+        </div>
+    </div>
+    <script  type="text/javascript">
+         $(document).ready(function() {
+//Khi bàn phím được nhấn và thả ra thì sẽ chạy phương thức này
+                $("#formDemo").validate({
+                    rules: {
+                        chieudai: "required",
+                        chieurong: "required",
+                    },
+                    messages: {
+                        chieudai: "Không được để trống dữ liệu",
+                        chieurong: "Không được để trống dữ liệu",
+                        
+                    }
+                });
+            });
+                
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,18 @@
+.box-maths{
+    border: solid blue;
+    width:600px;
+    height: 300px;
+}
+.box-title{
+    border-bottom: solid blue;
+    background:#FEFFED;
+}
+
+
+.btn{
+    background-color: darkgreen;
+    color: white;
+}
+p{
+    color: blue;
+}
