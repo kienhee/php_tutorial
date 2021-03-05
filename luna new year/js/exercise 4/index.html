@@ -17,47 +17,38 @@
             margin: auto;
             border-bottom: 1px solid black;
         }
-
+        span{
+            color: red;       }
     </style>
 </head>
 <body>
-    <form action="#" method="POST">
+    <form action="#" method="#">
         <h3>Tìm giai thừa </h3>
         <label for="">Nhập vào hệ số giai thừa: </label><br>
-        <input type="number" name="" id="input"><br>
-        <span id="error">a</span><br>
-        <input type="submit"onclick="factorial(this.form)" value="Tính gia thừa" style="background-color: blue;"><br>
-        <span id="result">a</span>
+        <input type="number" name="" id="input" required><br>
+        <span id="error"></span><br>
+        <input type="submit"onclick="getFactorials()" value="Tính gia thừa" style="background-color: blue;"><br>
+        <span id="result"></span>
     </form>
     <script>
-        var factored = 1;
-
-function factorial(form) {
-	
-	var number = form.factor.value;
-	var n = number;
-	
-	
-	for (i = n; i>0 ; i--){
-		if (n>170)	{
-			form.result.value="Hey! that is too big for my pea brain";
+        function getFactorials() {
+			var getValue = document.getElementById('input').value;
+			if (isNaN(getValue)) {
+			   document.getElementById('error').innerHTML='Hãy nhập một số !';
+				return false;
+			}else if (getValue < 0){
+				document.getElementById('error').innerHTML='Hãy nhập một số nguyên dương';
+				return false;
 			}
-		else	{
-			if (i==n)	{
-				factored= i;
-				}
-			else	{
-				factored = factored*(i);
-				}
-				form.result.value=factored;
+			else {
+				var tempt = 1;
+				for (var i = 2 ; i<=getValue ; i++){
+					tempt = tempt * i;
+				};
+				document.getElementById('result').innerHTML = getValue + '! = ' + tempt;
+				return true;
 			}
-			
 		}
-	
-	return factored;
-	} 
-	
-
     </script>
 </body>
 </html>

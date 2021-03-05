@@ -24,14 +24,14 @@
 <body>
     <form action="#">
         <label >Nhập vào số a: </label><br>
-        <input type="text" id="number"  ><br>
+        <input type="text" id="number" required><br>
         <span id="error"></span><br>
         <input type="submit" onclick="test()" value="Kiểm tra" style="background-color: blue ;">
         <p><span id="result"></span>nằm trong khoảng 1 - 10</p>
     </form>
     <script>
         function test() {
-            var a = document.getElementById('number').value;
+            var a = document.getElementById('number').value.trim;
             if(a == ''){
                 document.getElementById('error').innerHTML= 'vui lòng kiểm tra lại';
             }

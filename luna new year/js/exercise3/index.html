@@ -40,8 +40,15 @@
             var a = document.getElementById('numberone').value;
             var b = document.getElementById('numbertwo').value;
             var c = document.getElementById('numberthree').value;
-       a, b , c.sort(function(a, b){return a - b});
+            var array = [];
+					array.push(a);
+					array.push(b);
+					array.push(c);
+                   
+				var maxValue = Math.max.apply(null,array);
+                var minValue = Math.min.apply(null,array);
+                document.getElementById('max').innerHTML =  maxValue;
+				document.getElementById('min').innerHTML =  minValue;
         }
     </script>
-</body>
 </html>
