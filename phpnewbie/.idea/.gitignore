@@ -2,7 +2,7 @@
 /shelf/
 /workspace.xml
 # Datasource local storage ignored files
-/../../../../../../../:\xampp\htdocs\php_tutorial\php\10-mar\.idea/dataSources/
+/../../../../../../:\xampp\htdocs\php_tutorial\phpnewbie\.idea/dataSources/
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
